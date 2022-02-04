@@ -4,30 +4,41 @@
     <meta charset="utf-8">
     <title>template</title>
     <style media="screen">
-      html{
+      body{
         cursor: url('./hand.png') 5 5, auto;
       }
       .overlay{
     opacity:1.0;
-    background-color:#FF0000;
+    background-color:#fff;
     position:fixed;
     width:100%;
     height:100%;
     top:0px;
     left:0px;
     z-index:1000;
-}
-    .oob{
-      width: 40%;
-    height: 40%;
-    background: #444;
     align: center;
-    }
+}
+.bruh {
+  position: relative;
+  z-index: 0;
+ }
+.cake {
+  position: absolute;
+  z-index: 1;
+ }
+.top {
+  position: absolute;
+  z-index: 2;
+ }
     </style>
   </head>
   <body>
-    <div class="overlay" style="align:'center';"">
-           <img src="./base.png" height="90%" style:"text-align:center;">
+    <center>
+    <div class="overlay">
+        <img class="cake" src="./two.png" height="100%">
+        <img class="cake" src="./three.png" height="100%">
+        <img class="cake" src="./one.png" height="100%">
+        <img class="bruh" src="./base.png" height="100%">
     </div>
   </body>
 </html>
